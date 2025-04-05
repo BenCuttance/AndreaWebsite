@@ -3,6 +3,12 @@
 	import '../../styles/global.css';
 
 	let { title, navLinks }: { title: string; navLinks: { links: string[] } } = $props();
+
+	let activeLink = $state('Home');
+
+	let changeActiveLink = (link: string) => {
+		activeLink = link;
+	};
 </script>
 
 <section>
@@ -11,7 +17,11 @@
 	</div>
 	<div class="links">
 		{#each navLinks.links as link}
-			<a href="/pages/{link}">{link}</a>
+			<a
+				href="/pages/{link}"
+				class={activeLink === link ? 'active' : ''}
+				onclick={() => changeActiveLink(link)}>{link}</a
+			>
 		{/each}
 		<BookNowButton />
 	</div>
@@ -20,6 +30,12 @@
 <style>
 	* {
 		font-family: 'Lato', sans-serif;
+	}
+
+	.active {
+		text-decoration: underline;
+		text-decoration-thickness: 1px; /* Thin the line */
+		text-underline-offset: 4px; /* Adjust the distance between the word and the line */
 	}
 
 	section {
