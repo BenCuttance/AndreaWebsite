@@ -14,7 +14,5 @@
 		color: white;
 		min-width: 83px;
 		white-space: nowrap;
-
 	}
 </style>
-

@@ -1,13 +1,10 @@
 <script>
-	import MainBanner from "$lib/components/mainBanner.svelte";
-
-
+	import MainBanner from '$lib/components/mainBanner.svelte';
 </script>
 
 <section>
-    <MainBanner />
+	<MainBanner />
 </section>
 
 <style>
-
 </style>
