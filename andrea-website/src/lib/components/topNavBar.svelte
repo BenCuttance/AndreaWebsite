@@ -11,7 +11,7 @@
 	</div>
 	<div class="links">
 		{#each navLinks.links as link}
-			<a href={link}>{link}</a>
+			<a href='/pages/{link}'>{link}</a>
 		{/each}
 		<BookNowButton />
 	</div>
@@ -52,6 +52,10 @@
 		color: var(--main-color-green);
 	}
 
+	a:active{
+		text-decoration: underline;
+	}
+
 	@media (max-width: 685px) {
 		section {
 			grid-template-columns: unset;
@@ -61,6 +65,10 @@
 		.links {
 			grid-column-start: unset;
 			grid-row-start: 2;
+		}
+
+		.title {
+			white-space: pre-wrap;
 		}
 	}
 </style>
