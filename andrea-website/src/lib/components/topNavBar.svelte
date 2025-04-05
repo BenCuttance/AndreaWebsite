@@ -11,7 +11,7 @@
 	</div>
 	<div class="links">
 		{#each navLinks.links as link}
-			<a href='/pages/{link}'>{link}</a>
+			<a href="/pages/{link}">{link}</a>
 		{/each}
 		<BookNowButton />
 	</div>
@@ -52,7 +52,7 @@
 		color: var(--main-color-green);
 	}
 
-	a:active{
+	a:active {
 		text-decoration: underline;
 	}
 
