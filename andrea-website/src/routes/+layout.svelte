@@ -31,6 +31,6 @@
 	.pages{
 		min-height: 100vh;
 		max-width: 100%;
-		background-color: var(--main-color-green);
+		background-color: #588157;
 	}
 </style>
