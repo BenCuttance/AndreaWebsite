@@ -8,8 +8,11 @@
 		<MainBanner />
 	</div>
 	<div class="seperator">
-        <!-- <Testimonials /> -->
+        <Testimonials />
 	</div>
+    <div class="info">
+g
+    </div>
 
 </section>
 
@@ -20,8 +23,13 @@
         flex-direction: column;
     }
     .seperator{
-        margin-top: 2%;
-        padding: 2% 0 2% 0;
+        margin-top: .5%;
+        margin-bottom: .5%;
+    }
+
+    .info{
+        background-color: var(--main-color-green);
+
     }
 
     @media (max-width:915px){

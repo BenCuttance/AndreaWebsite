@@ -7,13 +7,15 @@
 
 <style>
 	section {
-		background-color: var(--main-color-green);
+		background-color: var(--secondary-color-green);
 		width: 100%;
-		/* min-height: 120px; */
+		margin-left: 1%;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 		display: flex;
+		border-radius: 16px;
 		justify-content: center;
 		align-items: center;
-		padding: 1rem 1rem;
+		padding: .5rem .5rem;
 		text-align: center;
 	}
 
@@ -21,8 +23,21 @@
 		font-family: 'Prata', serif;
 		font-size: var(--title-font); 
 		color: white;
-		max-width: 900px;
+		max-width: 90%;
 		line-height: 1.6;
 		font-style: italic;
+	}
+
+	@media (max-width: 915px){
+		section{
+			margin-left: unset;
+			border-radius: unset;
+		}
+	}
+
+	@media (max-width: 600px){
+		p{
+			font-size: 20px;
+		}
 	}
 </style>
