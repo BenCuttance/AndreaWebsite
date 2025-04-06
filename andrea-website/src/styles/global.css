@@ -1,3 +1,5 @@
 :root {
 	--main-color-green: #7dbb8e;
+	--main-font:'Roboto', sans-serif;
+	--title-font: 35px;
 }

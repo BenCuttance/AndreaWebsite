@@ -26,6 +26,6 @@
 	.pages {
 		min-height: 100vh;
 		max-width: 100%;
-		background-color: #588157;
+		/* background: linear-gradient(to right, var(--main-color-green), white); */
 	}
 </style>

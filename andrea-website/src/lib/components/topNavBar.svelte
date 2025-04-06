@@ -23,13 +23,13 @@
 				onclick={() => changeActiveLink(link)}>{link}</a
 			>
 		{/each}
-		<BookNowButton />
+		<BookNowButton title={'Book now'} --text-color='#7dbb8e'/>
 	</div>
 </section>
 
 <style>
 	* {
-		font-family: 'Lato', sans-serif;
+		font-family: 'Prata', serif;
 	}
 
 	.active {
@@ -39,19 +39,24 @@
 	}
 
 	section {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		/* grid-template-columns: repeat(4, 1fr); */
 		padding: 2%;
 		align-items: center;
+		background-color: var(--main-color-green);
 	}
 
 	.title {
+
 		display: flex;
-		font-size: 35px;
-		color: var(--main-color-green);
+		font-size: 45px;
+		color: white;
 		display: flex;
 		justify-content: space-around;
 		white-space: nowrap;
+		text-align: center;
 	}
 
 	.links {
@@ -60,16 +65,23 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		gap: 2%;
+		gap: 10%;
 	}
 
 	a {
 		text-decoration: none;
-		color: var(--main-color-green);
+		color: white;
 	}
 
 	a:active {
 		text-decoration: underline;
+	}
+
+	@media (max-width: 1100px){
+		section{
+			flex-direction: column;
+			align-items: stretch;
+		}
 	}
 
 	@media (max-width: 685px) {
@@ -86,5 +98,10 @@
 		.title {
 			white-space: pre-wrap;
 		}
+	@media (max-width: 450px){
+		.links{
+			flex-direction: column;
+		}
+	}
 	}
 </style>
